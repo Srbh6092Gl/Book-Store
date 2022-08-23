@@ -22,7 +22,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@GetMapping
+	@GetMapping("/user")
 	public List<User> getAllUsers(@RequestParam("email") String email,
 							@RequestParam("password") String password,
 							@RequestParam("asAdmin") boolean asAdmin) throws Exception {

@@ -68,7 +68,7 @@ public class UserServiceImpl implements UserService {
 	private void authenticateAdmin(String email, String password) throws Exception {
 		
 		//If the email matches the admin's email and password
-		if(!email.equalsIgnoreCase(adminEmail) || !email.equalsIgnoreCase(adminPass))
+		if(!email.equalsIgnoreCase(adminEmail) || !password.equals(adminPass))
 			throw new Exception("Wrong Credentials !!!!!!");
 	}
 	
